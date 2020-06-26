@@ -1,0 +1,857 @@
+body
+    width: 1920px
+    margin: 0 auto
+.wrapper
+    min-height: 1024px
+    background: url('../img/bckg/header-bckg.png') center center/cover no-repeat
+header
+    display: flex
+    align-items: center
+    padding: 40px 0 0 40px
+    position: relative
+.container
+    width: 1230px
+    margin: 0 auto
+    box-sizing: border-box
+
+.logo
+    width: 181px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0 219px 0 0
+    text-decoration: none
+    color: #fff
+    background-color: transparent
+    &-svg
+        fill: currentColor
+    &-txt
+        font-family: 'Raleway Regular'
+        font-size: 34px
+        letter-spacing: -1.36px
+        text-align: left
+    &:hover
+        @include item-hover()
+    &:active
+        @include item-active()
+.menu
+    display: inline-block
+    min-height: 56px
+    margin: 0 63px 0 0
+    &-list
+        margin: 0
+        padding: 0
+        list-style-type: none
+        width: 637px
+        min-height: 56px
+        display: flex
+        justify-content: space-between 
+        align-items: center
+    &-link
+        color: #ffffff
+        font-family: 'Montserrat Light'
+        font-size: 14px
+        text-decoration: none
+        &:hover
+            @include item-hover()
+        &:active
+            @include item-active()          
+    .active 
+        color: #c7b299 
+        cursor: default
+        &:hover
+            cursor: default
+            color: #c7b299   
+    &-cart
+        height: 26px
+        width: 20px
+        position: absolute
+        right: 90px
+        background-color: transparent
+        fill: #fff
+        outline: none
+        border: none
+        cursor: pointer
+        &:hover
+            @include svg-hover()
+        &:active
+            @include svg-active()
+
+input[type="search"] 
+    margin: 0 0 0 24px
+    width: 26px
+    height: 26px
+    outline: none
+    background-color: transparent
+    background-image: url('../img/icons/icon-search.png')
+    background-size: contain
+    background-repeat: no-repeat
+    border: none
+    color: white
+    font-family: 'Montserrat Light';
+    font-size: 12px
+    &:focus
+        width: 300px
+        transform: translate(-310px,35px)
+        transition: width 1s ease-out
+        background-position: right
+        border: 1px solid white 
+    
+.portfolio
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-left
+        display: inline-block
+        margin: 225px 0 0 150px
+        width: 40px
+        height: 72px
+        &-arrow
+            stroke: white
+            stroke-width: 3
+            fill: none
+            &:hover
+                stroke: #998675
+                transition: 0.3s all 
+            &:active
+                stroke: darken(#998675, 20%)
+                transition: 0.5s all
+            
+    &-right
+        display: inline-block
+        margin: 225px 150px 0 0
+        width: 40px
+        height: 72px
+        &-arrow
+            stroke: #c7b299
+            stroke-width: 3
+            fill: none
+            &:hover
+                stroke: #998675
+                transition: 0.3s all 
+            &:active
+                stroke: darken(#998675, 20%)
+                transition: 0.5s all
+    &-gallery
+        width: 1230px  
+    &-subtitle
+        color: #ffffff
+        font-family: 'Raleway Medium'
+        font-size: 36px
+        margin: 285px 0 0 0
+        text-align: center
+    &-title
+        color: #ffffff
+        font-family: "Raleway Extra Bold"
+        font-size: 52px
+        margin: 14px 0 0 0
+        text-align: center
+    &-desc
+        width: 562px
+        color: #ffffff
+        font-family: 'Montserrat Light'
+        font-size: 16px
+        line-height: 24px
+        margin: 19px auto 0 auto
+        text-align: center
+    &-btn
+        @include button(170px, 53px, 52px)
+        
+.pagination
+    min-height: 15px
+    width: 128px
+    margin: 297px auto 40px auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-item
+        margin: 0 10px 0 0
+        width: 11px
+        height: 11px
+        background-color: #ffffff
+        border-radius: 100%
+        border: 3px solid transparent
+        &:last-child
+           margin: 0 
+        &:hover
+            border: 3px solid #d3c1ad
+            background-color: transparent
+            transform: scale(1.2);
+        &:active
+            border: 3px solid #d3c1ad
+            background-color: #ffffff
+            transform: scale(1.2);
+            
+    .active
+        width: 15px
+        height: 15px
+        border: 3px solid #d3c1ad
+        background-color: transparent
+        &:hover
+            cursor: default
+            transform: scale(1);
+.realization
+    width: 1920px
+.advantages
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin: 84px 0 0 0
+    &-item
+        width: 267px
+        text-align: center
+        &:after
+            content: ''
+            display: block
+            margin: 33px auto 0 auto
+            width: 70px
+            height: 3px
+            background-color: #f1eee9
+        &:hover
+            cursor: pointer
+            .advantages-icon
+                fill: #c7b299
+            .advantages-title
+                color: #c7b299
+            &:after
+                background-color: #c7b299
+    
+    &-icon
+        min-height: 49px
+        width: 50px
+        margin: 0 auto
+        fill: #555555
+    &-title
+        margin: 30px 0 0 0
+        color: #555555
+        font-family: 'Raleway Semibold'
+        font-size: 22px
+    &-text
+        margin: 19px 0 0 0 
+        color: #8c8c8c
+        font-family: 'Montserrat Light'
+        font-size: 14px
+        line-height: 24px 
+            
+.active.advantages
+        &-item
+            &:after
+                background-color: #c7b299
+.active
+    .advantages
+        &-icon
+            fill: #c7b299
+        &-title
+            color: #c7b299 
+.ideas
+    &-title
+        @include h2-title(163px, 0, 0, center, #555555)      
+    &-text
+        @include p-text(24px, auto, auto, 757px, center, #8c8c8c)
+    &-img
+        margin: 40px auto 0 auto
+        min-height: 482px;
+.wordpress
+    width: 100%
+    height: 150px
+    margin: 0 auto
+    background-color: #f4f5f8
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%)
+    &-body
+        padding: 0 30px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        min-height: 150px
+        width: 530px
+    &-waxom
+        display: inline-block
+        margin: 0 10px 0 0
+        font-family: 'Raleway Regular'
+        font-size: 28px
+        color: #c7b299
+    &-title
+        display: inline-block
+        margin: 0 
+        color: #ffffff
+        font-family: 'Raleway Regular'
+        font-size: 28px
+    &-text
+        margin: 8px 0 0 0
+        color: #615855
+        font-family: 'Montserrat Light'
+        font-size: 18px
+    &-btn
+        @include button(170px, 50px, 0)
+        margin: 0
+.projects
+    &-header
+        @include h2-title(81px, auto, auto, center, #555555)
+    &-text
+        @include p-text(24px, auto, auto, 757px, center, #8c8c8c)
+    &-menu
+        width: 585px
+        margin: 40px auto 0 auto
+        padding: 0
+        list-style-type: none
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &-item
+        height: 32px
+        border-radius: 3px
+        display: inline-block
+        border: 1px solid #ebebeb
+        background-color: white
+        box-sizing: border-box
+        padding: 0 15px
+        margin: 0 10px 0 0
+        outline: none
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #8c8c8c
+        font-family: 'Montserrat Light'
+        font-size: 14px
+        &:hover
+           background-color: lighten(#998675, 25%) 
+           color: darken(#998675, 20%)
+        &:active
+           background-color: lighten(#998675, 30%) 
+           color: darken(#998675, 30%)
+           outline: 2px solid #8c8c8c
+           outline-offset: -2px
+    .actives
+        color: white
+    .active
+        background-color: #998675
+        color: white
+    &-gallery
+        margin: 48px 0 0 0
+        width: 100%
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &-slide
+        width: 370px
+        min-height: 337px
+        margin: 0 0 30px 0
+        position: relative
+        &-wrapper
+            margin: 0
+            min-height: 100px
+            position: relative
+            box-sizing: border-box
+            padding: 30px 0 0 29px
+            background-color: #fbfaf8
+            &::before
+                display: block
+                position: absolute
+                content: ''
+                border: 20px solid transparent
+                border-bottom: 15px solid #fbfaf8
+                top: -30px
+                left: 19px      
+        &-img
+            display: block
+            position: relative
+        &-title
+            margin: 0
+            text-align: left
+            color: #c7b299
+            font-family: 'Raleway Medium'
+            font-size: 20px
+        &-desc
+            margin: 10px 0 0 0
+            text-align: left
+            color: #d1d1d1
+            font-family: 'Montserrat Light'
+            font-size: 14px
+        &-btn-link,
+        &-btn-search
+            width: 20px
+            height: 20px
+            display: none
+            border: none
+            outline: none
+            background-color: transparent
+            position: absolute
+            top: 45%
+        &-btn-link
+            left: 35%
+            fill: #fff
+        &-btn-search
+            right: 35%
+            fill: #fff
+        &:hover
+            .projects-slide-img
+                filter: brightness(20%)
+            .projects-slide-wrapper
+                background-color: #362f2d
+                &::before
+                    border: 20px solid transparent
+                    border-bottom: 15px solid #362f2d
+            .projects-slide-btn-link
+                display: block
+                &:hover
+                    transform: scale(2.5) 
+                    cursor: pointer 
+                    fill:#c7b299 
+            .projects-slide-btn-search
+                display: block
+                &:hover
+                    transform: scale(2.5)
+                    cursor: pointer
+                    fill:#c7b299
+            .projects-slide-title
+                    color: #d1d1d1
+            .projects-slide-desc
+                    color: #c7b299
+    &-btn
+        @include button(170px, 50px, 40px)
+        cursor: pointer
+.video
+    width: 100%
+    height: auto
+    margin: 80px 0 0 0 
+    &-file
+        width: 100%
+        height: auto
+        max-height: 100%
+        top: 0
+        left: 0   
+    &-desc
+        display: none
+.mobile
+    width: 1230px
+    margin: 79px auto 0 auto
+    &-wrapper
+        width: 100%
+        margin: 0 0 0 31px 
+        display: flex
+        justify-content: spase-between
+    &-title
+        @include h2-title(116px, 0, 0, left, #555555) 
+    &-desc
+        @include p-text(40px, 0, 0,657px, justify, #8c8c8c)
+    &-list
+        list-style-type: none
+        margin: 45px 0 0 100px
+        padding: 0
+        &-item
+            color: #8c8c8c
+            font-family: 'Montserrat Light'
+            font-size: 16px
+            line-height: 32px
+            position: relative
+            &:before
+                display: block
+                position: absolute
+                content: ''
+                width: 21px
+                height: 21px
+                background: url('../img/icons/mobile-list-icon.png') center center/cover no-repeat
+                top: 10%
+                left: -50px
+.counter
+    width: 1920px;
+    min-height: 300px;
+    background-color: #f4f5f8;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    &-title
+        display: none
+    &-wrapper
+        display: flex
+        justify-content: space-around
+        align-items: center
+    &-icon
+        display: block
+        width: 54px
+        min-height: 44px
+        margin: 69px auto 0 auto
+        text-align: center
+        fill: #c7b299
+    &-item
+        width: 145px
+        min-height: 171px
+        margin: 0
+    &-quantity
+        display: block
+        color: #ffffff
+        font-family: 'Montserrat Light'
+        font-size: 48px
+        line-height: 40px
+        text-align: center
+        margin: 30px auto 0 auto
+    &-text
+        display: block
+        color: #c7b299
+        font-family: 'Montserrat Light'
+        font-size: 14px
+        text-transform: uppercase
+        text-align: center 
+        position: relative
+        margin: 21px 0 0 0
+        &::after
+            position: absolute
+            display: block
+            content: ''
+            width: 30px
+            height: 2px
+            background-color: #ffffff   
+            left: 50%
+            transform: translateX(-50%)
+            top: 45px   
+.posts
+    &-title
+        @include h2-title(82px, auto, auto, center, #555555)
+    &-desc
+        @include p-text(30px, auto, auto, 757px, center, #8c8c8c)
+    &-gallery
+        margin: 40px 0 0 0
+        display: flex
+        justify-content: space-around
+        align-items: center
+        &-item
+            min-height: 395px
+            width: 370px
+            position: relative
+            &-time
+                position: absolute
+                top: 20px
+                left: 20px
+                width: 50px
+                height: 60px
+                z-index: 3
+                &-data
+                    height: 35px
+                    border-top-left-radius: 3px
+                    border-top-right-radius: 3px
+                    background-color: #363636
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: #ffffff
+                    font-family: 'Montserrat Light'
+                    font-size: 24px
+                    font-weight: 300
+                    line-height: 20px
+                &-month
+                    height: 25px
+                    border-bottom-left-radius: 3px
+                    border-bottom-right-radius: 3px
+                    background-color: #252525
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: #ffffff
+                    font-family: 'Roboto Regular'
+                    font-size: 12px
+                    font-weight: 300
+                    line-height: 20px
+            &-title
+                margin: 30px auto 0 29px
+                color: #555555
+                font-family: 'Raleway Medium'
+                font-size: 20px
+                line-height: 18px
+            &-desc
+                margin: 19px 44px 0 29px
+                color: #8c8c8c
+                font-family: 'Montserrat Light' 
+                font-size: 14px
+                line-height: 22px
+            &-link
+                display: block
+                margin: 27px auto 0 29px
+                text-decoration: none
+                color: #c7b299
+                font-family: 'Montserrat Light' 
+                font-size: 14px
+                position: relative
+                &::after
+                    position: absolute
+                    content: ''
+                    border: 5px solid transparent
+                    border-left: 8px solid #c7b299
+                    top: 3px;
+                    right: 240px;
+                &:hover
+                    @include item-hover()
+                    text-decoration: underline
+                    &::after
+                        border-left: 8px solid #998675
+                &:active
+                    @include item-active()
+                    text-decoration: underline
+                    &::after
+                        border-left: 8px solid darken(#998675, 30%)
+            &:hover
+                background-color: #362f2d
+                .posts-gallery-item-img
+                    filter: brightness(20%)
+                .posts-gallery-item-desc
+                    color: #ffffff
+                .posts-gallery-item-title
+                    color: #c7b299   
+                .posts-gallery-item-time-data
+                    background-color: #c7b299
+                .posts-gallery-item-time-month
+                    background-color: #a48d72    
+    &-wrapper
+        margin: 40px auto 0 auto
+        width: 52px
+        display: flex
+        justify-content: space-around
+        &-btn
+            outline: none
+            border: none 
+            padding: 0
+            background-color: transparent
+            cursor: pointer
+            fill: #d1d1d1
+            &:hover
+                @include svg-hover()
+            &:active
+                @include svg-active()
+.partners
+    background: url('../img/bckg/partners-bg.png') center center/cover no-repeat
+    height: 489px
+    padding: 0
+    &-header
+        display: none
+    &-wrapper
+        height: 489px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-link
+        &:hover
+            filter: brightness(70%)
+        &:active
+            filter: brightness(50%)
+            
+.main-footer
+    width: 1920px
+    min-height: 508px
+    background-color: #191919
+    &-header
+        display: none
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+.waxom
+    width: 258px  
+    box-sizing: border-box
+    padding: 80px 0 0 0
+    &-header
+        display: none
+    &-logo
+        display: block
+        width: 181px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 219px 0 0
+        text-decoration: none
+        color: #fff
+        background-color: transparent
+        &-svg
+            fill: currentColor
+        &-txt
+            font-family: 'Raleway Regular'
+            font-size: 34px
+            letter-spacing: -1.36px
+            text-align: left
+        &:hover
+            @include item-hover()
+        &:active
+            @include item-active()
+    &-desc
+        margin: 29px 0 0 0
+        color: #555555
+        font-family: 'Montserrat Light'
+        font-size: 14px
+        line-height: 24px
+        text-align: justify
+    &-link
+        display: block
+        margin: 33px auto 0 0
+        text-decoration: none
+        color: #d1d1d1
+        font-family: 'Montserrat Light' 
+        font-size: 14px
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            border: 5px solid transparent
+            border-left: 8px solid #d1d1d1
+            top: 3px;
+            right: 160px;
+        &:hover
+            @include item-hover()
+            text-decoration: underline
+            &::after
+                border-left: 8px solid #998675
+        &:active
+            @include item-active()
+            &::after
+                border-left: 8px solid darken(#998675, 30%)
+.footer-posts
+    width: 262px
+    padding: 108px 0 0 0
+    &-title
+        margin: 0
+        color: #ffffff
+        font-family: 'Raleway Bold'
+        font-size: 24px
+    &-item
+        margin: 20px 0 0 0
+        border-bottom: 1px solid #252525
+        &:last-child
+            border: none
+        &:hover
+            cursor: pointer
+            .footer-posts-item-date
+                color: #ffffff
+            .footer-posts-item-text
+                color:#c7b299
+        &:active
+            .footer-posts-item-date
+                color: darken(#ffffff, 20%)
+            .footer-posts-item-text
+                color: darken(#c7b299, 20%)          
+        &-date
+            margin: 20px 0 20px 0
+            color: #363636
+            font-family: 'Montserrat Light'
+            font-size: 12px
+        &-text
+            margin: 10px 0 0 0
+            padding: 0 0 20px 0
+            color: #555555
+            font-family: 'Montserrat Light'
+            font-size: 14px
+            
+.twitter
+    width: 272px
+    padding: 108px 0 0 0
+    &-title
+        margin: 0
+        color: #ffffff
+        font-family: 'Raleway Bold'
+        font-size: 24px
+    &-item
+        margin: 20px 0 0 0 
+        border-bottom: 1px solid #252525  
+        &:last-child
+            border: none    
+        &-desc
+            margin: 20px 0 0 0
+            color: #555555
+            font-family: 'Montserrat Light'
+            font-size: 14px
+            .twitter-item-desc-link
+                color: #00bff3
+            .twitter-item-desc-bit
+                color: #959595
+        &-time
+            display: block
+            margin: 10px 0 0 0
+            padding: 0 0 20px 0
+            color: #363636
+            font-family: 'Montserrat Light'
+            font-size: 12px
+.widget
+    width: 271px
+    padding: 108px 0 0 0
+    &-title
+        margin: 0
+        color: #ffffff
+        font-family: 'Raleway Bold'
+        font-size: 24px
+    &-gallery
+        margin: 26px 0 0 0
+        display:  flex
+        justify-content: space-between
+        align-content: space-between
+        flex-wrap: wrap
+        &-img
+            width: 130px
+            height: 98px
+            margin: 0 0 10px 0
+            &:hover
+                filter: brightness(70%)
+            &:active
+                filter: brightness(50%)
+.sub-footer
+    width: 1920px
+    min-height: 111px
+    background-color: #111111
+    &-header
+        display: none
+    &-wrapper
+        min-height: 111px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-copyright
+        margin: 0
+        padding: 0
+        &-item
+            display: inline-block
+            padding: 0 15px
+            color: #555555
+            font-family: 'Montserrat Light'
+            font-size: 13px
+            border-right: 1px solid #252525
+            &:last-child
+                border: none
+            &:first-child
+                padding: 0 15px 0 0
+        &-link
+            text-decoration: none
+            color: #555555
+            font-family: 'Montserrat Light'
+            font-size: 13px
+            &:hover
+                color: #c7b299
+            &:active
+                color: darken(#c7b299, 20%)
+.waxom-white
+    padding: 0 0 0 10px
+    color: #959595
+.sub-footer-design
+    margin: 0
+    padding: 0
+    &-item
+        display: inline-block
+        padding: 0 15px
+        color: #555555
+        font-family: 'Montserrat Light'
+        font-size: 13px
+        border-right: 1px solid #252525
+        &:last-child
+            border: none
+        &:first-child
+            padding: 0 15px 0 0
+    &-link
+        padding: 0 0 0 10px
+        text-decoration: none
+        color: #959595
+        font-family: 'Montserrat Light'
+        font-size: 13px
+        &:hover
+            color: #c7b299
+        &:active
+            color: darken(#c7b299, 20%)
+
+

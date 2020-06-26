@@ -1,0 +1,1738 @@
+@media (min-width: 320px) and (max-width: 479px)
+    body
+        width: 100%
+        margin: 0
+        box-sizing: border-box
+    .container
+        width: 100%
+        padding: 0 10px
+        margin: 0 auto
+        box-sizing: border-box
+    .img-container
+        width: 95%
+        margin: 0 auto
+        max-width: 596px
+        display: flex
+        justify-content: center
+        align-items: center
+    .wrapper
+        width: 100%
+        min-height: 140px
+        background: none
+    header
+        height: 140px
+        padding: 0 35px
+        background: url('../img/bckg/header-bckg.png') center center/cover no-repeat
+        box-sizing: border-box
+    .logo
+        margin: 0
+    .menu
+        margin: 0
+        width: 100%
+        position: relative
+        &-list
+            position: fixed
+            top: 0
+            left: -100%
+            width: 40%
+            height: 100vh
+            flex-direction: column
+            justify-content: center
+            background-color: rgba(0,0,0,0.7)
+            padding: 10px
+            transition: 0.5s all
+            z-index: 111
+        &-item
+            padding: 10px 0
+        &-link
+        .active
+            color: white
+        &-active
+            left: 0
+
+    .gamburger
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        display: block
+        width: 40px
+        height: 40px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        span
+            display: block
+            height: 3px
+            width: 100%
+            background-color: white
+            margin: 0 0 10px 0
+            transition: 0.5s all
+        &-active
+            span
+                margin: 0 0 -3px 0
+                &:first-child
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:last-child
+                    transform: translateY(3px) rotate(45deg)
+
+    .menu-cart
+       display: none
+    .portfolio
+        display: none
+    .pagination
+        display: none
+    .search-form
+       display: none
+    .realization
+        width: 100%
+    .advantages
+        flex-wrap: wrap
+        margin: 10px 0 0 0
+        &-item
+            width: 40%
+            margin: 20px 0 0 0 
+            &::after
+                margin: 20px auto 0 auto
+        &-title
+            font-size: 18px
+            margin: 15px 0 0 0
+        &-text
+            font-size: 12px
+            line-height: 20px
+            margin: 10px 0 0 0
+    .ideas-title,
+    .ideas-text,
+    .ideas-img,
+    .wordpress
+        display: none
+    .projects
+        width: 100%
+        box-sizing: border-box
+        &-header
+            font-size: 25px
+            margin: 30px auto 0 auto
+        &-text
+            box-sizing: border-box
+            width: 100%
+            margin: 15px 0 0 0
+            padding: 0 20px
+            font-size: 14px
+            line-height: 20px
+        &-menu
+            margin: 10px 0 0 0
+            box-sizing: border-box
+            width: 100%
+            padding: 0 20px
+            justify-content: space-around
+        &-item
+            min-height: 35px
+            font-size: 13px
+            padding: 5px
+        &-gallery
+            justify-content: center
+            margin: 0
+        &-btn
+            margin: 0 auto
+        &-slide
+            width: 95%
+            min-height: 250px
+            margin: 20px auto 0 auto
+            &-wrapper
+                min-height: 50px
+                padding: 15px 0 5px 15px
+            &-title
+                font-size: 15px
+            &-img
+                width: 100%
+                height: auto
+        &-btn
+            width: 30%   
+            height: 40px
+            font-size: 12px
+            font-family: 'Raleway Bold'
+    .video
+        width: 100%
+        height: auto
+        margin: 30px 0 0 0
+        &-file
+            width: 100%
+            height: auto
+            max-height: 100%
+            top: 0
+            left: 0
+        &-desc
+            display: none
+    .mobile
+        width: 100%
+        margin: 30px 0 0 0
+        &-wrapper
+            width: 100%
+            margin: 0
+        &-title
+            margin: 30px auto 0 auto
+            text-align: center
+            font-size: 25px
+        &-desc
+            box-sizing: border-box
+            width: 100%
+            margin: 15px 0 
+            padding: 0 20px
+            font-size: 14px
+            line-height: 20px
+            text-align: center
+        &-img
+            width: 60%
+            height: 100%
+        &-list
+            width: 70%
+            margin: 20px 30px 0 0
+            position: relative 
+            &-item
+                font-size: 12px
+                line-height: 16px
+                padding: 5px 0
+                &::before
+                    left: -15%
+    .counter
+        display: none
+    .posts
+        width: 100%
+        &-desc
+            width: 100%
+            padding: 0 5px
+            text-align: center
+        &-title
+            margin: 30px 0 0 0
+            text-align: center
+            font-size: 25px
+        &-desc
+            box-sizing: border-box
+            width: 100%
+            margin: 15px 0 0 0
+            padding: 0 20px
+            font-size: 14px
+            line-height: 20px
+            text-align: center
+        &-gallery
+            flex-wrap: wrap
+            &-item
+                min-height: 300px
+                width: 100%
+                margin: 10px 0 0 0
+                &-title
+                    margin: 15px 0 0 5%
+                    font-size: 15px
+                &-desc
+                    margin: 10px 0 0 5%
+                    font-size: 12px
+                    line-height: 15px
+                &-img
+                    width: 100%
+                    height: auto  
+                &-link
+                    margin: 15px 0 15px 5%
+                    &::after
+                        right: 70%                
+        &-wrapper
+            display: none
+    .partners
+        width: 100%
+        height: 130px
+        &-wrapper
+            width: 100%
+            height: 130px 
+            padding: 0 20px
+        &-link
+            &-logo
+                width: 85%
+                height: 85%
+                margin: 0
+    .main-footer
+        display: none
+    .sub-footer
+        height: 115px
+        width: 100%
+        &-wrapper
+            height: 100%
+            flex-direction: column
+            justify-content: space-evenly
+        &-copyright
+            &-item
+                padding: 0 10px
+@media (min-width: 480px) and (max-width: 575px)
+    body
+        width: 100%
+        margin: 0
+        box-sizing: border-box
+    .container
+        width: 100%
+        margin: 0 auto
+        box-sizing: border-box
+    .img-container
+        width: 95%
+        margin: 0 auto
+        max-width: 596px
+        display: flex
+        justify-content: center
+        align-items: center
+    .wrapper
+        width: 100%
+        min-height: 140px
+        background: none
+    header
+        min-height: 150px
+        padding: 0 35px
+        background: url('../img/bckg/header-bckg.png') center center/cover no-repeat
+        box-sizing: border-box
+    .logo
+        margin: 0
+    .menu
+        margin: 0
+        width: 100%
+        position: relative
+        &-list
+            position: fixed
+            top: 0
+            left: -100%
+            width: 40%
+            height: 100vh
+            flex-direction: column
+            justify-content: center
+            background-color: rgba(0,0,0,0.7)
+            padding: 10px
+            transition: 0.5s all
+        &-item
+            padding: 10px 0
+        &-link
+        .active
+            color: white
+        &-active
+            left: 0
+    .gamburger
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        display: block
+        width: 40px
+        height: 40px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        span
+            display: block
+            height: 3px
+            width: 100%
+            background-color: white
+            margin: 0 0 10px 0
+            transition: 0.5s all
+        &-active
+            span
+                margin: 0 0 -3px 0
+                &:first-child
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:last-child
+                    transform: translateY(3px) rotate(45deg)
+    .menu-cart
+       display: none
+    .portfolio
+        display: none
+    .pagination
+        display: none
+    input[type="search"] 
+        position: absolute
+        right: 17%
+        top: 50%
+        transform: translateY(-50%)
+        margin: 0 0 0 24px
+        width: 26px
+        height: 26px
+        outline: none
+        background-color: transparent
+        background-image: url('../img/icons/icon-search.png')
+        background-size: contain
+        background-repeat: no-repeat
+        border: none
+        color: white
+        font-family: 'Montserrat Light';
+        font-size: 12px
+        &:focus
+            width: 150px
+            height: 30px
+            transform: translate(1px, -14px)
+            transition: width 1s ease-out
+            background-position: right
+            border: 1px solid white 
+    .realization
+        width: 100%
+    .advantages
+        flex-wrap: wrap
+        margin: 10px 0 0 0
+        &-item
+            width: 40%
+            margin: 20px 0 0 0 
+            &::after
+                margin: 20px auto 0 auto
+        &-title
+            font-size: 18px
+            margin: 15px 0 0 0
+        &-text
+            font-size: 12px
+            line-height: 20px
+            margin: 10px 0 0 0
+    .ideas-title,
+        font-size: 20px
+        margin: 30px 0 0 0 
+    .ideas-text
+        margin: 15px auto 0 auto
+        font-size: 14px
+        line-height: 20px
+        width: 80%
+    .ideas-img
+        display: none
+    .wordpress
+        margin: 20px 0 0 0
+        height: 130px
+        &-wrapper
+            min-height: 100px
+            padding: 15px
+            width: 70%
+        &-body
+            padding: 0 10px
+        &-waxom
+            font-size: 20px
+        &-title
+            font-size: 20px
+        &-text
+            font-size: 15px
+        &-btn
+            width: 25%
+            height: 50px
+            font-size: 12px
+            font-family: 'Raleway Bold'
+    .projects
+        width: 100%
+        box-sizing: border-box
+        &-header
+            font-size: 25px
+            margin: 30px auto 0 auto
+        &-text
+            box-sizing: border-box
+            width: 100%
+            margin: 15px 0 0 0
+            padding: 0 20px
+            font-size: 14px
+            line-height: 20px
+        &-menu
+            margin: 15px 0 0 0
+            box-sizing: border-box
+            width: 100%
+            padding: 0 20px
+            justify-content: space-around
+        &-item
+            font-size: 15px
+            padding: 5px
+        &-gallery
+            justify-content: center
+            margin: 0
+        &-btn
+            margin: 0 auto
+        &-slide
+            width: 80%
+            min-height: 300px
+            margin: 20px auto 0 auto
+            &-img
+                width: 100%
+                height: auto
+            &-wrapper
+                min-height: 50px
+                padding: 15px 0 5px 15px
+            &-title
+                font-size: 15px
+        &-btn
+            width: 30%   
+            height: 40px
+            font-size: 12px
+            font-family: 'Raleway Bold' 
+    .video
+        width: 100%
+        height: auto
+        margin: 30px 0 0 0
+        &-file
+            width: 100%
+            height: auto
+            max-height: 100%
+            top: 0
+            left: 0
+        &-desc
+            display: none
+    .mobile
+        width: 100%
+        margin: 30px 0 0 0
+        &-wrapper
+            width: 100%
+            margin: 0
+        &-title
+            margin: 30px auto 0 auto
+            text-align: center
+            font-size: 25px
+        &-desc
+            box-sizing: border-box
+            width: 100%
+            margin: 15px 0 
+            padding: 0 20px
+            font-size: 14px
+            line-height: 20px
+            text-align: center
+        &-img
+            width: 50%
+            height: 100%
+        &-list
+            width: 70%
+            margin: 20px 30px 0 0
+            position: relative 
+            &-item
+                font-size: 14px
+                line-height: 16px
+                padding: 5px 0
+                &::before
+                    left: -10% 
+
+    .counter
+        display: none
+    .posts
+        width: 100%
+        &-desc
+            width: 100%
+            padding: 0 5px
+            text-align: center
+        &-title
+            margin: 30px 0 0 0
+            text-align: center
+            font-size: 25px
+        &-desc
+            box-sizing: border-box
+            width: 100%
+            margin: 15px 0 0 0
+            padding: 0 20px
+            font-size: 14px
+            line-height: 20px
+            text-align: center
+        &-gallery
+            flex-wrap: wrap
+            &-item
+                min-height: 350px
+                width: 100%
+                margin: 10px 0 0 0
+                &-title
+                    margin: 15px 0 0 5%
+                    font-size: 17px
+                &-desc
+                    margin: 10px 0 0 5%
+                    font-size: 14px
+                    line-height: 17px
+                &-img
+                    width: 100%
+                    height: auto   
+                &-link
+                    margin: 15px 0 15px 5%
+                    &::after
+                        right: 80%
+        &-wrapper
+            display: none
+    .partners
+        width: 100%
+        height: 150px
+        &-wrapper
+            width: 100%
+            height: 150px 
+            padding: 0 20px
+        &-link
+            &-logo
+                width: 85%
+                height: 85%
+                margin: 0
+    .main-footer
+        display: none
+    .sub-footer
+        height: 130px
+        width: 100%
+        &-wrapper
+            height: 100%
+            flex-direction: column
+            justify-content: space-evenly
+        &-copyright
+            &-item
+                padding: 0 10px
+@media (min-width: 576px) and (max-width: 767px)
+    body
+        width: 100%
+        margin: 0
+        box-sizing: border-box
+    .container
+        width: 100%
+        margin: 0 auto
+        box-sizing: border-box
+        padding: 15px 15px 0 15px
+    .img-container
+        width: 100%
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        align-items: center
+    .wrapper
+        width: 100%
+        min-height: 300px
+        background: url('../img/bckg/header-bckg.png') center center/cover no-repeat
+    .gamburger
+        display: none
+    .menu
+        min-height: 45px
+        margin: 0
+        width: 75%
+        &-list
+            width: 100%
+        &-link
+            font-size: 12px
+    .logo
+        width: 15%
+        margin: 0 20px 0 0
+        &-txt
+            font-size: 25px
+    .portfolio-left,
+    .portfolio-right,
+    .menu-cart,
+    .pagination
+        display: none
+    .portfolio
+        &-gallery
+            width: 100%
+        &-subtitle
+            font-size: 25px
+            margin: 20px 0 0 0
+        &-title
+            font-size: 35px
+            margin: 10px 0 0 0
+        &-desc
+            font-size: 13px
+            width: 70%
+            margin: 10px auto 0 auto
+        &-btn
+            margin: 30px auto 30px auto
+            width: 20%
+            height: 45px
+    .search-form
+        margin: 0 0 0 2%
+        position: absolute
+        right: 3%   
+    input[type="search"] 
+        width: 22px
+        height: 22px
+        margin: 0
+        &:focus
+            width: 300px
+            transform: translate(-40px,35px) 
+    .realization
+        width: 100%
+    .advantages
+        flex-wrap: wrap
+        margin: 10px 0 0 0
+        &-item
+            width: 40%
+            margin: 20px 0 0 0 
+            &::after
+                margin: 20px auto 0 auto
+        &-title
+            font-size: 18px
+            margin: 15px 0 0 0
+        &-text
+            font-size: 12px
+            line-height: 20px
+            margin: 10px 0 0 0
+    .ideas-title,
+        font-size: 25px
+        margin: 30px 0 0 0 
+    .ideas-text
+        margin: 15px auto 0 auto
+        font-size: 15px
+        line-height: 20px
+        width: 80%
+    .ideas-img
+        width: 80%
+        min-height: 150%
+    .wordpress
+        height: 100px
+        &-body
+            padding: 0
+        &-wrapper
+            min-height: 100px
+            width: 70%
+            margin: 0 0 0 20px
+        &-waxom
+            font-size: 20px
+        &-title
+            font-size: 20px
+        &-text
+            font-size: 15px
+        &-btn
+            width: 20%
+            height: 40px
+            margin: 0 auto
+            font-size: 12px
+    .projects
+        width: 100%
+        box-sizing: border-box
+        &-header
+            font-size: 25px
+            margin: 30px auto 0 auto
+        &-text
+            box-sizing: border-box
+            width: 100%
+            margin: 15px 0 0 0
+            padding: 0 20px
+            font-size: 14px
+            line-height: 20px
+        &-menu
+            margin: 20px auto 0 
+            box-sizing: border-box
+            width: 100%
+            padding: 0 20px
+            justify-content: space-around
+        &-item
+            font-size: 15px
+            padding: 5px
+        &-gallery
+            justify-content: space-around
+            margin: 0
+        &-btn
+            margin: 0 auto
+        &-slide
+            width: 45%
+            min-height: 200px
+            margin: 20px auto 0 auto
+            &-img
+                width: 100%
+                height: auto
+            &-wrapper
+                min-height: 50px
+                padding: 15px 0 5px 15px
+            &-title
+                font-size: 15px
+        &-btn
+            margin: 20px auto 0 auto
+            width: 30%   
+            height: 45px
+            font-size: 12px
+            font-family: 'Raleway Bold' 
+    .video
+        width: 100%
+        height: auto
+        margin: 30px 0 0 0
+        &-file
+            width: 100%
+            height: auto
+            max-height: 100%
+            top: 0
+            left: 0
+        &-desc
+            display: none
+    .mobile
+        min-height: 300px
+        width: 100%
+        margin: 0
+        &-wrapper
+            width: 100%
+            margin: 0
+        &-title
+            margin: 30px auto 0 auto
+            text-align: center
+            font-size: 25px
+        &-desc
+            box-sizing: border-box
+            width: 100%
+            margin: 15px 0 
+            padding: 0 20px
+            font-size: 14px
+            line-height: 20px
+            text-align: center
+        &-img
+            width: 60%
+            height: 100%
+        &-list
+            width: 100%
+            margin: 20px 30px 0 0
+            position: relative 
+            &-item
+                font-size: 14px
+                line-height: 20px
+                padding: 5px 0
+                &::before
+                    left: -10%
+    .counter
+        margin: 0
+        width: 100%
+        min-height: 180px
+        &-icon
+            margin: 15px auto 0 auto
+        &-item
+            width: 20%
+            min-height: 150px
+        &-quantity
+            font-size: 25px
+            margin: 5px 0 0 0
+        &-text
+            margin: 5px 0 0 0
+            font-size: 10px
+            &::after
+                top: 30px
+    .posts
+        &-title
+            margin: 30px auto 0 auto
+            font-size: 25px
+        &-desc
+            box-sizing: border-box
+            width: 100%
+            margin: 15px 0 0 0
+            padding: 0 20px
+            font-size: 14px
+            line-height: 20px
+            text-align: center
+        &-gallery
+            margin: 30px 0 0 0
+            &-item
+                width: 32%
+                min-height: 250px
+                height: auto
+                &-img
+                    width: 100%
+                    height: auto
+                    top: 0
+                    left: 0
+                &-time
+                    width: 35px
+                    height: 40px
+                    top: 10px
+                    left: 10px
+                    &-data
+                        height: 25px
+                        font-size: 20px
+                &-title
+                    margin: 15px auto 0 auto
+                    text-align: center
+                    font-size: 15px
+                    line-height: 15px
+                &-desc
+                    margin: 10px 5px 0 5px
+                    font-size: 12px
+                    line-height: 15px
+                    text-align: center
+                &-link
+                    margin: 10px auto 0 5%
+                    font-size: 13px
+                    &::after
+                        top: 3px;
+                        right: 50%
+        &-wrapper
+            margin: 20px auto 0 auto
+    .partners
+        margin: 25px 0 0 0
+        width: 100%
+        height: 200px
+        &-wrapper
+            width: 100%
+            height: 200px 
+            padding: 0 20px
+        &-link
+            &-logo
+                width: 80%
+                height: 80%
+                margin: 0
+    .main-footer
+        width: 100%
+    .waxom
+        width: 23%
+        padding: 0
+        &-logo
+            width: 90%
+            min-height: 50px
+            margin: 0
+            &-txt
+                font-size: 30px
+        &-desc
+            margin: 10px 0 0 0
+            padding: 0 5px
+            font-size: 14px
+            line-height: 14px
+        &-link
+            margin: 10px auto 0 10%
+            font-size: 13px
+    
+            &::after
+                top: 3px
+                left: -7%
+    .footer-posts
+        width: 25%
+        padding: 10px 0 0 0
+        &-title
+            font-size: 22px
+            text-align: center
+        &-item
+            margin: 5px 0 0 0        
+            &-date
+                margin: 0
+            &-text
+                margin: 10px 0 
+                padding: 0
+                font-size: 13px 
+                text-align: justify
+    .twitter
+        width: 23%
+        padding: 10px 0 0 0
+        &-title
+            font-size: 22px
+            text-align: center
+        &-item
+            margin: 5px 0 0 0  
+            &-desc
+                margin: 10px 0 0 0
+                font-size: 13px
+                text-align: justify
+            &-time
+                margin: 10px 0 0 0
+                padding: 0 0 10px 0
+                font-size: 12px   
+    .widget
+        width: 23%
+        padding: 10px 0 0 0
+        &-title
+            font-size: 20px
+            text-align: center
+        &-gallery
+            &-img
+                margin: 0 auto 10px auto
+                &:hover
+                    filter: brightness(70%)
+                &:active
+                    filter: brightness(50%)
+    
+    .sub-footer
+        width: 100%
+        min-height: 70px
+        &-wrapper
+            min-height: 70px
+        &-copyright
+            width: 55%
+            &-item
+                padding: 0 5px
+                font-size: 12px
+    .sub-footer-design
+        width: 45%
+        &-item
+            padding: 0 5px
+            font-size: 12px
+            &:first-child
+                padding: 0 5px 0 0
+        &-link
+            padding: 0 0 0 5px
+            font-size: 12px
+@media (min-width: 768px) and (max-width: 991px)
+    body
+        width: 100%
+        margin: 0
+        box-sizing: border-box
+    .container
+        width: 100%
+        margin: 0 auto
+        box-sizing: border-box
+        padding: 15px 15px 0 15px
+    .img-container
+        width: 100%
+        height: auto
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        align-items: flex-end
+    .wrapper
+        width: 100%
+        min-height: 300px
+        background: url('../img/bckg/header-bckg.png') center center/cover no-repeat
+    .gamburger
+        display: none
+    .menu
+        min-height: 45px
+        margin: 0
+        width: 65%
+        &-list
+            width: 100%
+        &-link
+            font-size: 14px
+    .logo
+        width: 160px
+        margin: 0 30px 0 0
+        &-txt
+            font-size: 35px
+    .portfolio-left
+        margin: 0 0 0 5%
+        width: 20px
+        height: 52px
+    .portfolio-right
+        margin: 0 5% 0 0
+        width: 20px
+        height: 52px
+    .menu-cart
+        right: 8%
+    .pagination
+        width: 100px
+        margin: 10px auto 0 auto
+        padding: 0 0 30px 0
+        &-item
+            margin: 0 5px 0 0
+            width: 8px
+            height: 8px
+    .portfolio
+        &-gallery
+            width: 100%
+        &-subtitle
+            font-size: 25px
+            margin: 20px 0 0 0
+        &-title
+            font-size: 35px
+            margin: 10px 0 0 0
+        &-desc
+            font-size: 14px
+            width: 70%
+            margin: 10px auto 0 auto
+        &-btn
+            margin: 30px auto 30px auto
+            width: 20%
+            height: 45px
+    .search-form
+        margin: 0 0 0 2%
+        position: absolute
+        right: 3%   
+    input[type="search"] 
+        width: 22px
+        height: 22px
+        margin: 0
+        &:focus
+            width: 300px
+            transform: translate(-40px,35px) 
+    .realization
+        width: 100%
+    .advantages
+        flex-wrap: wrap
+        margin: 10px 0 0 0
+        &-item
+            width: 40%
+            margin: 20px 0 0 0 
+            &::after
+                margin: 20px auto 0 auto
+        &-title
+            font-size: 20px
+            margin: 15px 0 0 0
+        &-text
+            font-size: 14px
+            line-height: 20px
+            margin: 10px 0 0 0
+    .ideas-title,
+        font-size: 28px
+        margin: 35px 0 0 0 
+    .ideas-text
+        margin: 20px auto 0 auto
+        font-size: 16px
+        line-height: 20px
+        width: 80%
+    .ideas-img
+        width: 80%
+        min-height: 140%
+    .wordpress
+        height: 100px
+        &-body
+            padding: 0
+        &-wrapper
+            min-height: 100px
+            width: 70%
+            margin: 0 0 0 20px
+        &-waxom
+            font-size: 20px
+        &-title
+            font-size: 20px
+        &-text
+            font-size: 15px
+        &-btn
+            width: 20%
+            height: 40px
+            margin: 0 auto
+            font-size: 12px           
+    .projects
+        width: 100%
+        box-sizing: border-box
+        &-header
+            font-size: 28px
+            margin: 35px auto 0 auto
+        &-text
+            box-sizing: border-box
+            width: 100%
+            margin: 20px 0 0 0
+            padding: 0 20px
+            font-size: 16px
+            line-height: 20px
+        &-menu
+            margin: 25px auto 0 auto
+            box-sizing: border-box
+            width: 80%
+            padding: 0 20px
+            justify-content: space-around
+        &-item
+            font-size: 16px
+            padding: 5px 15px
+        &-gallery
+            justify-content: space-around
+            margin: 0
+        &-btn
+            margin: 0 auto
+        &-slide
+            width: 30%
+            min-height: 200px
+            margin: 20px auto 0 auto
+            &-img
+                width: 100%
+                height: auto
+            &-wrapper
+                min-height: 50px
+                padding: 15px 0 5px 15px
+            &-title
+                font-size: 15px
+        &-btn
+            margin: 20px auto 0 auto
+            width: 30%   
+            height: 45px
+            font-size: 14px
+            font-family: 'Raleway Bold'
+    .video
+        width: 100%
+        height: auto
+        margin: 30px 0 0 0
+        &-file
+            width: 100%
+            height: auto
+            max-height: 100%
+            top: 0
+            left: 0
+        &-desc
+            display: none
+    .mobile
+        min-height: 300px
+        width: 100%
+        margin: 0
+        &-wrapper
+            width: 100%
+            margin: 0
+        &-title
+            margin: 35px auto 0 auto
+            text-align: center
+            font-size: 28px
+        &-desc
+            box-sizing: border-box
+            width: 100%
+            margin: 20px 0 
+            padding: 0 20px
+            font-size: 16px
+            line-height: 20px
+            text-align: center
+        &-img
+            width: 50%
+            height: 100%
+        &-list
+            width: 100%
+            margin: 20px 30px 0 0
+            position: relative 
+            &-item
+                font-size: 16px
+                line-height: 20px
+                padding: 5px 0
+                &::before
+                    left: -7% 
+    .counter
+        margin: 0
+        width: 100%
+        min-height: 180px
+        &-icon
+            margin: 15px auto 0 auto
+        &-item
+            width: 20%
+            min-height: 150px
+        &-quantity
+            font-size: 30px
+            margin: 5px 0 0 0
+        &-text
+            margin: 5px 0 0 0
+            font-size: 13px
+            &::after
+                top: 30px
+    .posts
+        &-title
+            margin: 35px auto 0 auto
+            font-size: 28px
+        &-desc
+            box-sizing: border-box
+            width: 100%
+            margin: 20px 0 0 0
+            padding: 0 20px
+            font-size: 16px
+            line-height: 20px
+            text-align: center
+        &-gallery
+            margin: 30px 0 0 0
+            &-item
+                width: 32%
+                min-height: 300px
+                height: auto
+                &-img
+                    width: 100%
+                    height: auto
+                    top: 0
+                    left: 0
+                &-time
+                    width: 35px
+                    height: 40px
+                    top: 10px
+                    left: 10px
+                    &-data
+                        height: 25px
+                        font-size: 20px
+                &-title
+                    margin: 15px auto 0 auto
+                    text-align: center
+                    font-size: 18px
+                    line-height: 15px
+                &-desc
+                    margin: 10px 5px 0 5px
+                    font-size: 14px
+                    line-height: 15px
+                    text-align: center
+                &-link
+                    margin: 10px auto 0 5%
+                    font-size: 14px
+                    &::after
+                        top: 3px;
+                        right: 60%
+        &-wrapper
+            margin: 20px auto 0 auto
+    .partners
+        width: 100%
+        height: 250px
+        margin: 30px 0 0 0
+        &-wrapper
+            width: 100%
+            height: 250px 
+            padding: 0 20px
+        &-link
+            &-logo
+                width: 85%
+                height: 85%
+                margin: 0
+    .main-footer
+        width: 100%
+    .waxom
+        width: 23%
+        padding: 0
+        &-logo
+            width: 90%
+            min-height: 50px
+            margin: 15px auto 0 auto
+            &-txt
+                font-size: 38px
+        &-desc
+            margin: 15px 0 0 0
+            padding: 0 5px
+            font-size: 14px
+            line-height: 18px
+        &-link
+            margin: 10px auto 0 10%
+            font-size: 13px
+    
+            &::after
+                top: 3px
+                left: -7%
+    .footer-posts
+        width: 25%
+        padding: 20px 0 0 0
+        &-title
+            font-size: 25px
+            text-align: center
+        &-item
+            margin: 5px 0 0 0        
+            &-date
+                margin: 0
+            &-text
+                margin: 10px 0 
+                padding: 0
+                font-size: 14px 
+                text-align: justify
+                line-height: 18px
+    .twitter
+        width: 23%
+        padding: 20px 0 0 0 
+        &-title
+            font-size: 25px
+            text-align: center
+        &-item
+            margin: 5px 0 0 0  
+            &-desc
+                margin: 10px 0 0 0
+                font-size: 14px
+                text-align: justify
+            &-time
+                margin: 10px 0 0 0
+                padding: 0 0 10px 0
+                font-size: 12px   
+    .widget
+        width: 23%
+        padding: 20px 0 0 0
+        &-title
+            font-size: 25px
+            text-align: center
+        &-gallery
+            &-img
+                margin: 0 auto 10px auto
+                &:hover
+                    filter: brightness(70%)
+                &:active
+                    filter: brightness(50%)
+    
+    .sub-footer
+        width: 100%
+        min-height: 70px
+        &-wrapper
+            padding: 0 20px
+            min-height: 70px
+        &-copyright
+            width: 55%
+            &-item
+                padding: 0 5px
+                font-size: 12px
+    .sub-footer-design
+        width: 45%
+        &-item
+            padding: 0 5px
+            font-size: 12px
+            &:first-child
+                padding: 0 5px 0 0
+        &-link
+            padding: 0 0 0 5px
+            font-size: 12px
+@media (min-width: 992px) and (max-width: 1119px)
+    body
+        width: 100%
+        margin: 0
+        box-sizing: border-box
+    .container
+        width: 100%
+        margin: 0 auto
+        box-sizing: border-box
+        padding: 20px 20px 0 20px
+    .img-container
+        width: 100%
+        height: auto
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        align-items: flex-end
+    .wrapper
+        width: 100%
+        min-height: 300px
+        background: url('../img/bckg/header-bckg.png') center center/cover no-repeat
+    .gamburger
+        display: none
+    .menu
+        min-height: 45px
+        margin: 0
+        width: 65%
+        &-list
+            width: 100%
+        &-link
+            font-size: 16px
+    .logo
+        width: 160px
+        margin: 0 30px 0 0
+        &-txt
+            font-size: 35px
+    .portfolio-left
+        margin: 0 0 0 5%
+        width: 30px
+        height: 65px
+    .portfolio-right
+        margin: 0 5% 0 0
+        width: 30px
+        height: 65px
+    .menu-cart
+        right: 8%
+    .pagination
+        width: 100px
+        margin: 80px auto 0 auto
+        padding: 0 0 30px 0
+        &-item
+            margin: 0 5px 0 0
+            width: 8px
+            height: 8px
+    .portfolio
+        &-gallery
+            width: 100%
+        &-subtitle
+            font-size: 30px
+            margin: 50px 0 0 0
+        &-title
+            font-size: 40px
+            margin: 25px 0 0 0
+        &-desc
+            font-size: 16px
+            width: 70%
+            margin: 25px auto 0 auto
+        &-btn
+            margin: 50px auto 0 auto
+            width: 20%
+            height: 45px
+    .search-form
+        margin: 0 0 0 2%
+        position: absolute
+        right: 3%   
+    input[type="search"] 
+        width: 22px
+        height: 22px
+        margin: 0
+        &:focus
+            width: 300px
+            transform: translate(-40px,35px) 
+    .realization
+         width: 100%
+    .advantages
+        flex-wrap: wrap
+        margin: 10px 0 0 0
+        &-item
+            width: 20%
+            margin: 20px 0 0 0 
+            &::after
+                margin: 20px auto 0 auto
+        &-title
+            font-size: 20px
+            margin: 15px 0 0 0
+        &-text
+            font-size: 14px
+            line-height: 20px
+            margin: 10px 0 0 0
+    .ideas-title,
+        font-size: 30px
+        margin: 40px 0 0 0 
+    .ideas-text
+        margin: 25px auto 0 auto
+        font-size: 16px
+        line-height: 20px
+        width: 80%
+    .ideas-img
+        width: 80%
+        min-height: 140%
+    .wordpress
+        height: 110px
+        &-body
+            padding: 0
+        &-wrapper
+            min-height: 100px
+            width: 70%
+            margin: 0 0 0 20px
+        &-waxom
+            font-size: 25px
+        &-title
+            font-size: 25px
+        &-text
+            font-size: 18px
+        &-btn
+            width: 20%
+            height: 50px
+            margin: 0 auto
+            font-size: 14px 
+    .projects
+        width: 100%
+        box-sizing: border-box
+        &-header
+            font-size: 30px
+            margin: 40px auto 0 auto
+        &-text
+            box-sizing: border-box
+            width: 100%
+            margin: 25px 0 0 0
+            padding: 0 20px
+            font-size: 16px
+            line-height: 22px
+        &-menu
+            margin: 25px auto 0 auto
+            box-sizing: border-box
+            width: 70%
+            padding: 0 20px
+            justify-content: space-around
+        &-item
+            font-size: 16px
+            padding: 5px 15px
+        &-gallery
+            justify-content: space-around
+            margin: 0
+        &-btn
+            margin: 0 auto
+        &-slide
+            width: 30%
+            min-height: 200px
+            margin: 20px auto 0 auto
+            &-img
+                width: 100%
+                height: auto
+            &-wrapper
+                min-height: 50px
+                padding: 15px 0 5px 15px
+            &-title
+                font-size: 15px
+        &-btn
+            margin: 20px auto 0 auto
+            width: 30%   
+            height: 45px
+            font-size: 14px
+            font-family: 'Raleway Bold'
+    .video
+        width: 100%
+        height: auto
+        margin: 30px 0 0 0
+        &-file
+            width: 100%
+            height: auto
+            max-height: 100%
+            top: 0
+            left: 0
+        &-desc
+            display: none 
+    .mobile
+        min-height: 300px
+        width: 100%
+        margin: 0
+        &-wrapper
+            width: 100%
+            margin: 0
+        &-title
+            margin: 40px auto 0 auto
+            text-align: center
+            font-size: 30px
+        &-desc
+            box-sizing: border-box
+            width: 100%
+            margin: 25px 0 
+            padding: 0 20px
+            font-size: 16px
+            line-height: 22px
+            text-align: center
+        &-img
+            width: 50%
+            height: 100%
+        &-list
+            width: 100%
+            margin: 20px 30px 0 0
+            position: relative 
+            &-item
+                font-size: 16px
+                line-height: 20px
+                padding: 5px 0
+                &::before
+                    left: -7% 
+    .counter
+        margin: 0
+        width: 100%
+        min-height: 180px
+        padding: 0 20px
+        &-icon
+            margin: 15px auto 0 auto
+        &-item
+            width: 18%
+            min-height: 150px
+        &-quantity
+            font-size: 30px
+            margin: 5px 0 0 0
+        &-text
+            margin: 5px 0 0 0
+            font-size: 13px
+            &::after
+                top: 30px
+    .posts
+        &-title
+            margin: 40px auto 0 auto
+            font-size: 30px
+        &-desc
+            box-sizing: border-box
+            width: 100%
+            margin: 25px 0 0 0
+            padding: 0 20px
+            font-size: 16px
+            line-height: 22px
+            text-align: center
+        &-gallery
+            margin: 30px 0 0 0
+            &-item
+                width: 32%
+                min-height: 300px
+                height: auto
+                &-img
+                    width: 100%
+                    height: auto
+                    top: 0
+                    left: 0
+                &-time
+                    width: 45px
+                    height: 65px
+                    top: 10px
+                    left: 10px
+                    &-data
+                        height: 25px
+                        font-size: 24px
+                &-title
+                    margin: 20px auto 0 auto
+                    text-align: center
+                    font-size: 20px
+                &-desc
+                    margin: 15px 5px 0 5px
+                    font-size: 16px
+                    line-height: 18px
+                    text-align: center
+                &-link
+                    margin: 10px auto 0 5%
+                    font-size: 16px
+                    &::after
+                        top: 3px;
+                        right: 65%
+        &-wrapper
+            margin: 20px auto 0 auto
+    .partners
+        width: 100%
+        height: 300px
+        margin: 30px 0 0 0
+        &-wrapper
+            width: 100%
+            height: 300px 
+            padding: 0 30px
+        &-link
+            &-logo
+                width: 70%
+                height: 70%
+                margin: 0
+    .main-footer
+        width: 100%
+    .waxom
+        width: 23%
+        padding: 0
+        &-logo
+            width: 90%
+            min-height: 50px
+            margin: 15px auto 0 auto
+            &-txt
+                font-size: 38px
+        &-desc
+            margin: 15px 0 0 0
+            padding: 0 5px
+            font-size: 14px
+            line-height: 18px
+        &-link
+            margin: 10px auto 0 10%
+            font-size: 13px
+    
+            &::after
+                top: 3px
+                left: -7%
+    .footer-posts
+        width: 25%
+        padding: 20px 0 0 0
+        &-title
+            font-size: 25px
+            text-align: center
+        &-item
+            margin: 5px 0 0 0        
+            &-date
+                margin: 0
+            &-text
+                margin: 10px 0 
+                padding: 0
+                font-size: 14px 
+                text-align: justify
+                line-height: 18px
+    .twitter
+        width: 23%
+        padding: 20px 0 0 0 
+        &-title
+            font-size: 25px
+            text-align: center
+        &-item
+            margin: 5px 0 0 0  
+            &-desc
+                margin: 10px 0 0 0
+                font-size: 14px
+                text-align: justify
+            &-time
+                margin: 10px 0 0 0
+                padding: 0 0 10px 0
+                font-size: 12px   
+    .widget
+        width: 23%
+        padding: 20px 0 0 0
+        &-title
+            font-size: 25px
+            text-align: center
+        &-gallery
+            &-img
+                margin: 0 auto 10px auto
+                &:hover
+                    filter: brightness(70%)
+                &:active
+                    filter: brightness(50%)
+    
+    .sub-footer
+        width: 100%
+        min-height: 70px
+        &-wrapper
+            padding: 0 30px
+            min-height: 70px
+        &-copyright
+            width: 55%
+            &-item
+                padding: 0 10px
+                font-size: 14px
+    .sub-footer-design
+        width: 45%
+        &-item
+            padding: 0 5px
+            font-size: 14px
+            &:first-child
+                padding: 0 10px 0 0
+        &-link
+            padding: 0 0 0 10px
+            font-size: 14px
+
+        
+        
+        
+        
+    
+
+
+      
+    
+    
+
+
+        
+
+      
+
+    
+            
+            
